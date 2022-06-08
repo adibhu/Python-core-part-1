@@ -229,7 +229,7 @@
               
           output: [1,2,3,4]
            
-      - list.insert(i, x) is used to insert item at a specific index.
+   - list.insert(i, x) is used to insert item at a specific index.
               
               a = [1,2,3]
               a.insert(0, 4)
@@ -237,7 +237,7 @@
               
              output: [4,1,2,3]
             
-       -  list.remove(x) is used to remove remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item
+   -  list.remove(x) is used to remove remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item
                 
                 a = [1,2,3]
                 a.remove(3)
@@ -355,5 +355,11 @@
          for k, v in knights.items():
          print(k, v)
         
-    output: gallahad the pure
-    robin the brave
+         output: gallahad the pure
+         robin the brave
+         
+  ## Conclusion
+        Python is easy to read programing language most of the keywords are very obvious to understand.
+  ## Reference
+   - [w3schools](www.w3schools.com)
+   - [Python documentation](https://docs.python.org/3/tutorial/)
