@@ -59,7 +59,21 @@
          print([4:8])
          output : ya b
          Explanation : It is printing from 4th index(included) to 8th index(excluded)
+   
+   * Now here comes the point where we have to sort the String, Let's have a look a how to sort Strings in Python.
+         
+         For sorting strings in Python we can't use sort function directly and it will tell us that **'str' object has no attribute 'sort'**
+         
+           Example for Sorting a String - 
 
+           temp_string = "This is Testing String"
+           temp = ''.join(sorted(temp_string))
+           print(temp)
+
+           O/P - STTegghiiiinnrssstt
+
+           // Now here we have used sorted function which will give us sorted list of all characters in given string and then we can join it using join function
+         
 ### Lists
    - Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.
    - Like strings, lists can be indexed and sliced.
@@ -346,6 +360,36 @@
             print(mydict)
             
             output: {'apple': 2, 'mango': 3, 'orange': 4}
+   
+   - Sorting Dictionary Using Keys
+       
+           // Here we will use x[0] for sorting Dictionary using it's Keys.
+
+           temp_dict = {1:4, 3:2, 2:3, 4:1, 0:5}
+           temp_dict = dict(sorted(temp_dict.items(), key=lambda x: x[0]))
+           print(temp_dict)
+
+           O/P - {0: 5, 1: 4, 2: 3, 3: 2, 4: 1}
+       
+   - Using Values
+       
+           // Here we will use x[1] for sorting Dictionary using it's Values.  
+
+           temp_dict = {1:4, 3:2, 2:3, 4:1, 0:5}
+           temp_dict = dict(sorted(temp_dict.items(), key=lambda x: x[1]))
+           print(temp_dict)
+
+           O/P - {4: 1, 3: 2, 2: 3, 1: 4, 0: 5}
+   
+   - Sorting Dictionary in Reverse Order
+      
+          // For sorting in Reverse or Descending Order we can use reverse option in sorted function.
+
+          temp_dict = {1:4, 3:2, 2:3, 4:1, 0:5}
+          temp_dict = dict(sorted(temp_dict.items(), key=lambda x: x[1], reverse=True))
+          print(temp_dict)
+
+          O/P - {0: 5, 1: 4, 2: 3, 3: 2, 4: 1}
             
  ### Looping techniques
         
