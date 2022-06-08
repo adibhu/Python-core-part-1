@@ -21,13 +21,13 @@
             
             Output -> numnumnum
             Explanation: string 'num' is getting repeated 3 times. 
-   * + sign for concatanation.
+   *  '+' sign for concatanation.
             
             a = 'abc' + 'def'
             print(a)
 
-         output -> abcdef
-         Explanation : 'abc' and 'def' got concatanated.
+          output -> abcdef
+          Explanation : 'abc' and 'def' got concatanated.
 
    * Strings can be indexed (subscripted), first letter is on index 0
             
